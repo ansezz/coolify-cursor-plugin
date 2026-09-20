@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "coolify": {
+      "url": "${COOLIFY_BASE_URL}/mcp",
+      "headers": {
+        "Authorization": "Bearer ${COOLIFY_API_TOKEN}"
+      }
+    }
+  }
+}

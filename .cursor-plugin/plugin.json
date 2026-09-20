@@ -1,0 +1,49 @@
+{
+  "name": "coolify",
+  "displayName": "Coolify MCP",
+  "version": "0.1.0",
+  "description": "Cursor plugin for Coolify's built-in Streamable HTTP MCP. Browse servers, projects, apps, databases, and deployments on your Coolify instance — bring your own base URL and team-scoped API token.",
+  "author": {
+    "name": "XCO Agency",
+    "email": "hello@xco.agency"
+  },
+  "publisher": "xco-agency",
+  "license": "MIT",
+  "homepage": "https://xco.agency",
+  "repository": "https://github.com/ansezz/coolify-cursor-plugin",
+  "keywords": [
+    "coolify",
+    "mcp",
+    "deploy",
+    "docker",
+    "self-hosted",
+    "devops"
+  ],
+  "category": "mcp",
+  "tags": [
+    "coolify",
+    "mcp",
+    "deploy",
+    "devops"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "COOLIFY_BASE_URL": {
+        "type": "string",
+        "title": "Coolify base URL",
+        "description": "Your Coolify instance origin with no trailing slash, e.g. https://app.coolify.io or https://coolify.example.com"
+      },
+      "COOLIFY_API_TOKEN": {
+        "type": "string",
+        "title": "Coolify API token",
+        "description": "Team-scoped API token (Keys & Tokens). Needs at least read; add deploy only if you want lifecycle tools. Never commit this value."
+      }
+    },
+    "required": [
+      "COOLIFY_BASE_URL",
+      "COOLIFY_API_TOKEN"
+    ]
+  },
+  "logo": "assets/logo.svg"
+}
